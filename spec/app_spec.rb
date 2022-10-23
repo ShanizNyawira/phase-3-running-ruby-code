@@ -13,8 +13,16 @@ describe 'the program' do
   it 'outputs the string "Pass this test, please." using the print method' do
     expect { load 'app.rb' }.to output(a_string_including("Pass this test, please.")).to_stdout
   end
+  [{ id: 1, hello: "World" }, { id: 2, hello: "Ruby" }, { id: 3, hello: "Moon" }, { id: 4, hello: "Learner" }]
 
   it 'outputs the array [1, 2, 3] using the p method' do
     expect { load 'app.rb' }.to output(a_string_including("[1, 2, 3]\n")).to_stdout
   end
 end
+[{ id: 1, hello: "World" }, { id: 2, hello: "Ruby" }, { id: 3, hello: "Moon" }, { id: 4, hello: "Learner" }]
+[{ id: 1, hello: "World" }, { id: 2, hello: "Ruby" }, { id: 3, hello: "Moon" }, { id: 4, hello: "Learner" }]
+puts "Hello World!\n"
+
+print "Pass this test, please.\n"
+
+p [1, 2, 3]
